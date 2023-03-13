@@ -27,7 +27,6 @@
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .alinhamento-between-center{
@@ -54,12 +53,42 @@ header nav {
     position: fixed;
     top: 60px;
     left: 0;
-    width: 80vh;
-    height: 100vh;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    
+    width: 80vw;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    backdrop-filter: blur(45px);
 
     display: flex;
     flex-direction: column;
+}
+
+header .header-bottom nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    border-bottom: 2px solid #f9aa01;
+    padding: 25px 0;
+    text-decoration: none;
+    font-family: inter;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+header .header-bottom nav a:first-of-type{
+    color: #f9aa01;
+}
+
+header .header-bottom nav a:last-of-type{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 header .menu-usuarios {
@@ -71,3 +100,27 @@ header .logo{
     height: 25px;
 
 }
+
+.header-bottom nav .midias-sociais{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#aqui{
+    padding-top: 80px;
+}
+
+#logotipo{
+    width: 86px;
+}
+
+.header-bottom{
+    height: 100%;
+}
+
