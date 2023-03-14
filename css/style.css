@@ -41,7 +41,10 @@ body {
 
 /* header */
 header {
+    position: fixed;
+    width: 100vw;
     height: 60px;
+    z-index: 100;
     background-color: black;
 }
 
@@ -49,10 +52,12 @@ header .header-top {
     display: none;
 }
 
+/* nav */
 header nav {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: -80vw;
+    z-index: 101;
     display: flex;
     flex-direction: column;
     
@@ -61,6 +66,7 @@ header nav {
     padding-bottom: 20px;
     background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
     backdrop-filter: blur(45px);
+    transition: left 1s;
 
     display: flex;
     flex-direction: column;
@@ -92,8 +98,23 @@ header .header-bottom nav a:last-of-type{
 }
 
 header .menu-usuarios {
-    display: none;
+    width: 65px;
+    height: 170px;
+    
+    background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    backdrop-filter: blur(45px);
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -65vw;
+    top: 60px;
+    gap: 25px 0;
+    border-bottom: 2px solid #f9aa01;
 }
+
 
 header .logo{
     width: 86px;
@@ -101,6 +122,11 @@ header .logo{
 
 }
 
+.mostrar-menu{
+    left: 0;
+}
+
+/* logotipos midias sociais */
 .header-bottom nav .midias-sociais{
     position: absolute;
     width: 100%;
@@ -110,6 +136,10 @@ header .logo{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+}
+
+.mostrar-menu2{
+    right: 0 !important;
 }
 
 #aqui{
@@ -124,3 +154,12 @@ header .logo{
     height: 100%;
 }
 
+/* body */
+body .pagina1{
+    padding-top: 60px;
+}
+
+
+body h1{
+    color: ;
+}
