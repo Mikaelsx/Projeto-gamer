@@ -1,329 +1,251 @@
-/* imports de fonts */
+/* Imports de fonts */
 @font-face {
-    font-family: inter;
-    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
-}
-@font-face {
-    font-family: titilium-web;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
-}
-@font-face {
-    font-family: quicksand;
-    src: url(../assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-/* reset css */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+/* Reset CSS */
+
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* mobile first */
-
-/* classes genéricas */
-
+/* Classes Genéricas */
 .layout-grid {
     width: 90%;
     height: 100%;
     margin: 0 auto;
+    /* border: 1px solid salmon; */
 }
 
-.alinhamento-between-center{
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main{
-    position: absolute;
-    top: 60px;
-}
-
 
 body {
-    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
-/* header */
+/* Mobile First */
+
+/* HEADER */
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 60px;
     z-index: 100;
     background-color: #1B1426;
 }
 
-/* header-top */
-
 header .header-top {
-    display: block;
-    background-color: #1B1426;
-
-    height: 50px;
-    border-bottom: 2px solid #f9aa01;
+    display: none;
 }
 
-header .header-top div.midias-sociais{
-    display: flex;
-    margin-left: 1055px;
-    margin-bottom: 90px;
-    gap: 20px;
+header .header-bottom {
+    height: 60px;
 }
 
-header .header-top div.contatos{
-    color: white;
-   
+header .logo {
+    width: 86px;
 }
 
-/* nav */
-header nav {
+
+header .header-bottom nav {
     position: fixed;
     top: 60px;
     left: -80vw;
     z-index: 101;
     display: flex;
     flex-direction: column;
-    
+    /* justify-content: space-between; */
     width: 80vw;
     height: calc(100vh - 60px);
     padding-bottom: 20px;
-    /* erro */
-    background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
-    transition: left 1s;
-
-    display: flex;
-    flex-direction: column;
+    transition: left 0.4s;
 }
 
-header .header-bottom nav a{
+
+header .header-bottom nav>a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
-    border-bottom: 2px solid #f9aa01;
-    padding: 25px 0;
-    text-decoration: none;
-    font-family: inter;
-    font-size: 15px;
-    text-align: center;
+    padding: 30px 0;
     color: white;
+    font-size: 15px;
+    font-family: Inter;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
 }
 
-header .header-bottom nav a:first-of-type{
-    color: #f9aa01;
-}
-
-header .header-bottom nav a:last-of-type{
+header .header-bottom nav a:last-of-type {
     border-bottom: none;
-    border-left: none;
-    border-right: none;
+}
+
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
 }
 
 header .menu-usuarios {
-    width: 65px;
+    position: fixed;
+    top: 60px;
+    right: -20vw;
+    width: 20vw;
     height: 170px;
-    margin-bottom: 120px;
-    
-    background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    justify-content: center;
-    align-items: center;
-    
+
+    transition: right 0.4s;
+
     display: flex;
     flex-direction: column;
-    position: fixed;
-    right: -65vw;
-    top: 60px;
-    gap: 25px 0;
-    border-bottom: 2px solid #f9aa01;
-    transition:  right 0.6s;
-}
-
-
-header .logo{
-    width: 86px;
-    height: 25px;
-
-}
-
-.mostrar-menu{
-    left: 0;
-}
-
-/* logotipos midias sociais */
-.header-bottom nav .midias-sociais{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0px;
-    display: block;
-    display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.mostrar-menu2{
-    right: 0 !important;
+
+/* MAIN */
+
+main {
+    margin-top: 60px;
 }
 
-#aqui{
-    padding-top: 80px;
-}
+/* Banner */
 
-#logotipo{
-    width: 86px;
-}
-
-.header-bottom{
-    height: 100%;
-}
-main .fundo{
+main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 606px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-
-    
 }
-main #tituloh1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 222px;
-    height: 61px;
-    font-family: titilium-web;
+
+main .banner h1 {
+    font-family: TitilliumWeb-Black;
     font-size: 40px;
-    color: white;
-    
-    
-    margin-left: 76px;
     text-shadow: 0 0 7px #FD4255;
 }
 
+main .banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
 
-main #imagem-defundo{
+/* Sessão Jogos */
+
+main .jogos {
     width: 100%;
     height: 590px;
-    
-    position: relative;
     background-color: #1B1426;
 }
 
-main #botao{
-    display: flex;
-    justify-content: center;
-    
-    color: #1B1426;
-    font-family: titilium-web;
-    font-size: 24px;
-    
-    text-decoration: none;
-    
-    margin-top: 500px;
-    margin-left: 102px;
-    margin-right: 102px;
-    
-    background-color: #f9aa01;
-    width: 171px;
-    height: 40px;
-    border: 1px #1b14267d dashed ;
-    border-radius: 8px;
-    
-
-}
-
-main .jogos{
-    position: fixed;
-    width: 50px;
+main .jogos .jogos-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
-    
-}   
-main div #fifa{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-bottom: 110px;
-    width: 375px;
-    
 }
 
-main div #csgo{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 450px;
-    width: 375px;
-}
-
-main div #popular{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    text-decoration: none;
-    margin-left: 20px;
-    margin-bottom: 110px;
-
-    width: 200px;
-    height: 40px;
-
-    font-family: titilium-web;
-    font-size: 16px;
-    background-color: #f9aa01;
-    color: #1B1426;
-}
-main div #ultimo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    text-decoration: none;
-    margin-left: 20px;
-    margin-top: 450px;
-    margin-bottom: 0px;
-
-    width: 200px;
-    height: 40px;
-
-    font-family: titilium-web;
-    font-size: 16px;
-    background-color: #f9aa01;
-    color: #1B1426;
-}
 
 /* Tablets >= 768px */
 @media screen and (min-width: 768px) {}
 
 /* Desktop >= 1200px*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
-        margin: 0 auto;
-        height: 100%;
     }
 
-    header .header-bottom .menu-usuarios{
+    /* header */
+    header {
         position: static;
-        width: 140px;
-        flex-direction: row;
-        height: auto;
-        background-color: transparent;
-        background-image: none;
-    }
-    header{
         height: 140px;
+        width: 100%;
+    }
+
+    header .header-top {
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        font-family: Inter;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        /* border: 2px solid #FD4255; */
+    }
+
+    /* divs .phone, .mail */
+    header .header-top .contatos > div {
+        display: flex;
+        gap: 10px;
+        width: 200px;
+        /* border-bottom: 2px solid #F9AA01; */
+    }
+
+    header .header-top .midias-sociais {
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid #FD4255; */
     }
 
     /* esconde os elementos desnecessários */
@@ -335,47 +257,79 @@ main div #ultimo{
         display: none;
     }
 
+    header .logo {
+        width: 200px;
+    }
 
     header .header-bottom nav {
         position: static;
         width: 440px;
         height: 50px;
+        padding-bottom: 0;
         flex-direction: row;
         align-items: center;
-        
+        /* background-color: red; */
         justify-content: space-between;
-        }
-
-    header .header-bottom nav a{
-        margin-top: 20px;
-        border-bottom: none;
-        margin-top: 100px;
     }
 
-    header .header-bottom div#menu-user{
-        border-bottom: none;
-        gap: 20px;
-        margin-right: 20px;
-        margin-top: 80px;
-    }
-    header .header-bottom div #logotipo{
-        width: 196px;
-        height: 45px;
-        margin-left: 10px;
-        margin-top: 80px;
+    header .header-bottom nav>a {
+        font-size: 14px;
+        padding: 0;
+        border: none;
     }
 
-    header .header-bottom div #linha{
-        border-top: 5px solid #f9aa01;
+    header .header-bottom .menu-usuarios {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
     }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
     }
 
-    header .header-bottom nav.menu{
-        margin-bottom: 120px;
+    main .banner{
+        height: 722px;
+        background-image: url(../assets/images/Banner-desktop.png);
     }
 
+    main .jogos .jogos-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        height: 500px;
+        
+    }
 
+    main .jogos img{
+        width: 500px;
+        height: 313px;
+    }
 
-/* body */
+    main .progamer .titulo{
+        width: 100%;
+        font-family: TitilliumWeb-Black;
+        font-size: 40px;
+        color: #1B1426;
+        margin-bottom: 1px solid #1b1426;
+        background-color: #F9AA01;
+    }
 
+    main .progamer article{
+        position: relative;
+        width: 585px;
+        height: 700px;
+        
+        
+        height: 1000px;
+        background-color: #F9AA01;
+    }
+}
+
+   
