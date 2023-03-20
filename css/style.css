@@ -199,6 +199,22 @@ main .jogos .jogos-flex {
     justify-content: space-evenly;
 }
 
+main .progamer .titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    color: #1B1426;
+    margin-bottom: 1px solid #1b1426;
+    background-color: #F9AA01;
+}
+
+main .progamer article{
+    background-color: #F9AA01;
+    padding-left: 20px;
+}
+
 
 /* Tablets >= 768px */
 @media screen and (min-width: 768px) {}
@@ -323,13 +339,17 @@ main .jogos .jogos-flex {
 
     main .progamer article{
         position: relative;
-        width: 585px;
-        height: 700px;
-        
-        
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        justify-content: space-evenly;
         height: 1000px;
+        
+        
+        
         background-color: #F9AA01;
     }
+
 }
 
    
