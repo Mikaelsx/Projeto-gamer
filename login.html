@@ -46,7 +46,8 @@
                 alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
 
             <nav class="menu" id="menu">
-                <a href="">Início</a>
+                <a href="index.html">Início</a>
+
                 <a href="">Jogadores</a>
                 <a href="">Equipes</a>
                 <a href="">Notícias</a>
@@ -95,14 +96,52 @@
 </header>
 
 
-<main></main>
+<main>
+    <div class="login"></div>
+</main>
     
     <div class="banner"><img src="assets/images/Banner_Login.png" alt="imagem de trofeu usada como banner da página de login"></div>
+
     <div><h1>Login</h1></div>
-    <input type="text" id="user">
     
-<footer></footer>
+    <div class="usuario">
+    <img src="assets/icons/user-login.svg" alt="">
+    <input type="text" id="user" placeholder="Digite seu e-mail:">
+    </div>
+
+    <div class="senha">
+    <img src="assets/icons/senha-login.svg" alt="">
+    <input type="password" id="senha" placeholder="Digite a sua senha:">
+    </div>
+
+    <button type="button"  onclick="botaoLogin()" > Logar </button>
+    
+<footer>
     <div class="footer"><img src="assets/images/Footer-mobile.png" alt="footer mobile"></div>
+
+    <div class="redes-sociais">
+        <div class="facebook">
+          <a href=""> <img src="assets/login/icone_facebooklogin.svg" alt=""></a> 
+        </div>
+        <div class="linkedin">
+           <a href=""> <img src="assets/login/icone_linkedin.svg" alt=""></a>
+        </div>
+        <div class="instagram">
+           <a href=""> <img src="assets/login/icone_intagram.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="final">
+        <img class="reparo" src="assets/login/reparo.png" alt="">
+        <input class="aqui" type="text" placeholder="Digite seu e-mail:">
+        <button class="botao" type="botao"  onclick="botaoNew()" > Enviar </button>
+    </div>
+</footer>
+    
+
+
+    
+
 
 
 <script>

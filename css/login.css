@@ -141,29 +141,199 @@ header .menu-usuarios {
     align-items: center;
 }
 
+.banner{
+    display: flex;
+    margin-top: 20px;
+}
+
+
 h1{
     font-family: TitilliumWeb-Black;
     font-size: 28px;
     display: flex;
     position: absolute;
-    justify-content: center;
+    left: 155px;
     /* width: 375px; */
     top: 150px;
     border-top: 3px solid #f9aa01;
 }
 
-#user{
+div.usuario{
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    position: absolute;
+    top: 290px;
+    left: 50px;
+    
+}
+div.senha{
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+main .login {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 335px;
+    height: 462px;
+    border-radius: 8px ;
+    background-image: linear-gradient(to right bottom, (#1B1426, .6), (#3C0341, .38));
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+}
+
+input#user{
+    border: none;
+    outline: none;
+    display: flex;
+    position: static;
+    justify-content: center;
+    left: 50px;
+    top: 290px;
+    width: 273px;
+    height: 40px;
+    padding: 5px 10px;
+
+    background-color: transparent;
+}
+
+input#senha{
+    border: none;
+    outline: none;
+    display: flex;
+    position: static;
+    justify-content: center;
+    left: 50px;
+    top: 290px;
+    width: 273px;
+    height: 40px;
+    padding: 5px 10px;
+
+    background-color: transparent;
+}
+
+
+
+button {
+    font-family: TitilliumWeb-Black;
+    font-size: 22px;
+
     display: flex;
     position: absolute;
     justify-content: center;
-    top: 190px;
+    align-items: center;
+
+    width: 273px;
+    height: 40px;
+    top: 460px;
+    left: 50px;
+    border-radius: 8px;
+    
+    background-color: #F9AA01;
+    color: #1B1426;
 }
 
-/* main{
-    margin-top: 60px;
-    height: 687px;
+/* footer */
 
-    background-image: url(../assets/images/Banner_Login.png);
-    background-size: contain;
-    background-position: center;
+footer .redes-sociais{
+    display: flex;
+    position: absolute;
+    top: 1000px;
+    left: 20px;
+    gap: 110px; 
+    right: 20px;
+    
+}
+
+footer .redes-sociais .facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+footer .redes-sociais .linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+footer .redes-sociais .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+footer div .reparo{
+    display: flex;
+    position: absolute;
+    left: -45px;
+    top: 1910px;
+}
+
+/* footer .final{
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+
 } */
+
+footer div .aqui{
+    display: flex;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 1910px;
+    left: 25px;
+    
+    justify-content: center;
+    width: 333px;
+    height: 40px;
+    padding: 5px 10px;
+
+    background-color: transparent;
+    
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+footer div .botao{
+    display: flex;
+    position: absolute;
+}
