@@ -54,16 +54,16 @@ body {
 
 /* HEADER */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
     height: 60px;
     z-index: 100;
     background-color: #1B1426;
 }
 
 header .header-top {
+    display: none;
+}
+
+div .bannerdesktop{
     display: none;
 }
 
@@ -142,8 +142,8 @@ header .menu-usuarios {
 }
 
 .banner{
-    display: flex;
-    margin-top: 20px;
+    
+    
 }
 
 
@@ -205,7 +205,7 @@ input#user{
     justify-content: center;
     left: 50px;
     top: 290px;
-    width: 273px;
+    width: 255px;
     height: 40px;
     padding: 5px 10px;
 
@@ -220,7 +220,7 @@ input#senha{
     justify-content: center;
     left: 50px;
     top: 290px;
-    width: 273px;
+    width: 255px;
     height: 40px;
     padding: 5px 10px;
 
@@ -229,7 +229,7 @@ input#senha{
 
 
 
-button {
+ footer div #botao{
     font-family: TitilliumWeb-Black;
     font-size: 22px;
 
@@ -238,9 +238,9 @@ button {
     justify-content: center;
     align-items: center;
 
-    width: 273px;
+    top: 400px;
+    width: 275px;
     height: 40px;
-    top: 460px;
     left: 50px;
     border-radius: 8px;
     
@@ -253,7 +253,7 @@ button {
 footer .redes-sociais{
     display: flex;
     position: absolute;
-    top: 1000px;
+    top: 1045px;
     left: 20px;
     gap: 110px; 
     right: 20px;
@@ -300,7 +300,14 @@ footer div .reparo{
     display: flex;
     position: absolute;
     left: -45px;
-    top: 1910px;
+    top: 2010px;
+}
+
+footer div .fundo{
+    display: flex;
+    position: absolute;
+    left: -45px;
+    top: 1960px;
 }
 
 /* footer .final{
@@ -317,11 +324,11 @@ footer div .aqui{
     position: absolute;
     border: none;
     outline: none;
-    top: 1910px;
-    left: 25px;
+    top: 1920px;
+    left: 50px;
     
     justify-content: center;
-    width: 333px;
+    width: 275px;
     height: 40px;
     padding: 5px 10px;
 
@@ -333,7 +340,177 @@ footer div .aqui{
     backdrop-filter: blur(10px);
 }
 
-footer div .botao{
+footer div #enviar{
+    font-family: TitilliumWeb-Black;
+    font-size: 22px;
+
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    top: 2000px;
+    width: 275px;
+    height: 40px;
+    left: 50px;
+    border-radius: 8px;
+    
+    background-color: #F9AA01;
+    color: #1B1426;
+}
+
+footer div .seta{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    
+    top: 2150px;
+    left: 303px;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+/* desktop */
+/* Tablets >= 768px */
+@media screen and (min-width: 768px) {}
+
+/* Desktop >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    header {
+        position: static;
+        height: 140px;
+        width: 100vw;
+    }
+
+    header .header-top {
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        font-family: Inter;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        /* border: 2px solid #FD4255; */
+    }
+
+    /* divs .phone, .mail */
+    header .header-top .contatos > div {
+        display: flex;
+        gap: 10px;
+        width: 200px;
+        /* border-bottom: 2px solid #F9AA01; */
+    }
+
+    header .header-top .midias-sociais {
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid #FD4255; */
+    }
+
+    /* esconde os elementos desnecessários */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais 
+    {
+        display: none;
+    }
+
+    header .logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding-bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+        justify-content: space-between;
+    }
+
+    header .header-bottom nav>a {
+        font-size: 14px;
+        padding: 0;
+        border: none;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    div .bannerdesktop{
+        display: block;
+        width: 100vw;
+        height: 680px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div.login{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        
+        left: 350px;
+
+        width: 800px;
+        height: 520px;
+    }
+
+    div h1{
+        margin-top: 75px;
+        left: 700px;
+        
+    }
+
+    div.usuario{
+
+    }
+
+    div.senha{
+
+    }
+
+    div.banner{
+        display: none;
+    }
+
+    footer.rodape{
+        display: none;
+    }
+
+    input#user{
+        width: 565px;
+    }
+    
+    input#senha{
+        width: 565px;
+    }
 }

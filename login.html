@@ -95,13 +95,17 @@
     </div>
 </header>
 
+<div>
+    <img class="bannerdesktop" src="assets/login/Banner_Login.png" alt="">
+</div>
+
 
 <main>
     <div class="login"></div>
 </main>
     
-    <div class="banner"><img src="assets/images/Banner_Login.png" alt="imagem de trofeu usada como banner da página de login"></div>
-
+    <div class="banner">
+        <img src="assets/images/Banner_Login.png" alt="imagem de trofeu usada como banner da página de login"></div>
     <div><h1>Login</h1></div>
     
     <div class="usuario">
@@ -113,11 +117,10 @@
     <img src="assets/icons/senha-login.svg" alt="">
     <input type="password" id="senha" placeholder="Digite a sua senha:">
     </div>
-
-    <button type="button"  onclick="botaoLogin()" > Logar </button>
     
-<footer>
+<footer class="rodape">
     <div class="footer"><img src="assets/images/Footer-mobile.png" alt="footer mobile"></div>
+    <div><button id="botao" type="botao"  onclick="botaoNew()" > Logar </button></div>
 
     <div class="redes-sociais">
         <div class="facebook">
@@ -131,10 +134,15 @@
         </div>
     </div>
 
+    
+
     <div class="final">
         <img class="reparo" src="assets/login/reparo.png" alt="">
         <input class="aqui" type="text" placeholder="Digite seu e-mail:">
-        <button class="botao" type="botao"  onclick="botaoNew()" > Enviar </button>
+        <img class="fundo" src="assets/login/reparo.png" alt="">
+        <button id="enviar" type="enviar"  onclick="botaoLogin()" > Enviar </button>
+        <button id="enviar" type="enviar"  onclick="botaoLogin()" > Enviar </button>
+        <img class="seta" src="assets/login/seta.svg" alt="">
     </div>
 </footer>
     
