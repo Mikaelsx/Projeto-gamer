@@ -118,8 +118,8 @@
     <input type="password" id="senha" placeholder="Digite a sua senha:">
     </div>
     
-<footer class="rodape">
-    <div class="footer"><img src="assets/images/Footer-mobile.png" alt="footer mobile"></div>
+<footer>
+    <div id="rodape" class="footer"><img src="assets/images/Footer-mobile.png" alt="footer mobile"></div>
     <div><button id="botao" type="botao"  onclick="botaoNew()" > Logar </button></div>
 
     <div class="redes-sociais">
@@ -134,16 +134,21 @@
         </div>
     </div>
 
-    
 
-    <div class="final">
+    <div id="final" class="final">
         <img class="reparo" src="assets/login/reparo.png" alt="">
         <input class="aqui" type="text" placeholder="Digite seu e-mail:">
         <img class="fundo" src="assets/login/reparo.png" alt="">
         <button id="enviar" type="enviar"  onclick="botaoLogin()" > Enviar </button>
-        <button id="enviar" type="enviar"  onclick="botaoLogin()" > Enviar </button>
+        
         <img class="seta" src="assets/login/seta.svg" alt="">
     </div>
+
+    <div>
+        <button id="last" type="enviar" onclick="BotaoLogar()">Enviar</button>
+        <input class="teste" type="text" placeholder="Digite seu e-mail:">
+    </div>
+
 </footer>
     
 

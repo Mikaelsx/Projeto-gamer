@@ -153,7 +153,6 @@ h1{
     display: flex;
     position: absolute;
     left: 155px;
-    /* width: 375px; */
     top: 150px;
     border-top: 3px solid #f9aa01;
 }
@@ -374,6 +373,14 @@ footer div .seta{
     border-radius: 8px;
 }
 
+footer div.footer-login{
+    display: none;
+}
+
+div button#last{
+    display: none;
+}
+
 /* desktop */
 /* Tablets >= 768px */
 @media screen and (min-width: 768px) {}
@@ -486,23 +493,19 @@ footer div .seta{
 
     div h1{
         margin-top: 75px;
-        left: 700px;
+        left: 706px;
         
-    }
-
-    div.usuario{
-
-    }
-
-    div.senha{
-
     }
 
     div.banner{
         display: none;
     }
 
-    footer.rodape{
+    footer div#rodape{
+        display: none;
+    }
+
+    footer div#final{
         display: none;
     }
 
@@ -512,5 +515,72 @@ footer div .seta{
     
     input#senha{
         width: 565px;
+    }
+
+    div.usuario{
+        margin-top: 80px;
+        margin-left: 400px;
+    }
+    
+    div.senha{
+        margin-top: 100px;
+        margin-left: 400px;
+    }
+
+    footer button#botao{
+        margin-top: 150px;
+        left: 600px;
+    }
+    footer{
+        background-image: url(../assets/login/Footer.png);
+        
+        height: 520px;
+    }
+
+    footer .redes-sociais{
+        gap: 40px;
+        margin-top: 100px;
+        margin-left: 105px;
+    }
+
+    div button#last{
+        display: block;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+
+        font-family: TitilliumWeb-Black;
+        font-size: 22px;
+        width: 300px;
+        height: 45px;
+        left: 1030px;
+        margin-top: 265px;
+        border-radius: 8px;
+    
+        background-color: #F9AA01;
+        color: #1B1426;
+    }
+
+    footer div .teste{
+        display: flex;
+        position: absolute;
+        margin-left: 1030px;
+        margin-top: 210px;
+        
+        border: none;
+        outline: none;
+    
+    
+        justify-content: center;
+        width: 300px;
+        height: 40px;
+        padding: 5px 10px;
+
+        background-color: transparent;
+    
+
+        background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
     }
 }

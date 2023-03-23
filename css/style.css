@@ -215,6 +215,13 @@ main .progamer article{
     padding-left: 20px;
 }
 
+main section article#progamer-desktop {
+    display: none;
+}
+
+div h2#title{
+    display: none;
+}
 
 /* Tablets >= 768px */
 @media screen and (min-width: 768px) {}
@@ -328,6 +335,10 @@ main .progamer article{
         height: 313px;
     }
 
+    section.progamer{
+        display: none;
+    }
+
     main .progamer .titulo{
         width: 100%;
         font-family: TitilliumWeb-Black;
@@ -348,6 +359,53 @@ main .progamer article{
         
         
         background-color: #F9AA01;
+    }
+
+
+    main section article#progamer-desktop {
+        display: block;
+        position: absolute;
+    }
+
+    main section article#progamer-desktop{
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 80px;
+        position: absolute;
+        background-color: #F9AA01;
+        width: 1440px;
+        height: 1000px;
+    }
+
+    div h2#title{
+        display: block;
+    }
+
+    div h2#title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        height: 61px;
+        font-family: TitilliumWeb-Black;
+        font-size: 40px;
+        color: #1B1426;
+        margin-bottom: 1px solid #1b1426;
+        background-color: #F9AA01;
+    }
+
+    main section article #vintejogos{
+        display: flex;
+        position: absolute;
+        margin-right: 600px;
+    }
+
+    main section article #cinco{
+        display: flex;
+        position: absolute;
+        margin-left: 600px;
     }
 
 }
