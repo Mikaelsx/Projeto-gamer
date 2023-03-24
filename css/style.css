@@ -68,7 +68,7 @@ header .header-top {
 }
 
 header .header-bottom {
-    height: 90px;
+    height: 60px;
 }
 
 header .logo {
@@ -231,6 +231,10 @@ div h2#title{
     .layout-grid {
         width: 100%;
         max-width: 1200px;
+    }
+
+    header .header-bottom {
+        height: 90px;
     }
 
     .header-bottom .menu a:hover{

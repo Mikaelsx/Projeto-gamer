@@ -249,6 +249,10 @@ input#senha{
 
 /* footer */
 
+footer div .teste{
+    display: none;
+}
+
 footer .redes-sociais{
     display: flex;
     position: absolute;
