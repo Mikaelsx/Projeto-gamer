@@ -392,6 +392,17 @@ div button#last{
         max-width: 1200px;
     }
 
+    header .header-bottom {
+        height: 90px;
+    }
+
+    .header-bottom .menu a:hover{
+        width: 90px;
+        height: 90px;
+        background-color: rgb(255, 255, 255);
+        color: #F9AA01;
+    }
+
     header {
         position: static;
         height: 140px;
@@ -485,7 +496,7 @@ div button#last{
         align-items: center;
         margin-top: 60px;
         
-        left: 350px;
+        left: 330px;
 
         width: 800px;
         height: 520px;
@@ -493,7 +504,7 @@ div button#last{
 
     div h1{
         margin-top: 75px;
-        left: 706px;
+        left: 690px;
         
     }
 
@@ -529,11 +540,11 @@ div button#last{
 
     footer button#botao{
         margin-top: 150px;
-        left: 600px;
+        left: 590px;
     }
     footer{
         background-image: url(../assets/login/Footer.png);
-        
+        width: 100%;
         height: 520px;
     }
 
@@ -583,4 +594,6 @@ div button#last{
         border-radius: 8px;
         backdrop-filter: blur(10px);
     }
+
+
 }
